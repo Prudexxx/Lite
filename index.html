@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta <="UTF-8">
+  <meta <="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css" >
   <link rel="stylesheet" href="style.css">
@@ -31,7 +31,7 @@
       <div class="label">Проверить доступность и переезд</div>
       <div class="content">
         <p>
-        <span>Имя клиента, для уточнения технической возможности подключения, а также подобрать вам максимально выгодное предложение, назовите пожалуйста ваш город, улицу, дом и квартиру.
+          <span class="p1">Имя клиента</span>, <span> для уточнения технической возможности подключения, а также подобрать вам максимально выгодное предложение, назовите пожалуйста ваш город, улицу, дом и квартиру.
         </span> <br>
     1. <a href="#">Клиент партнера.</a> <br>
     2. <a href="#">Переезд.</a> <br>
@@ -56,9 +56,10 @@
       <div class="label">Презентация UP + скидка</div>
       <div class="content">
         <p>
-          <span class="n">
-            Имя клиента, для вашего номера и конечно же для Вас от компании Билайн есть предложение перейти со своим номером в компанию.
+         
+          <span class="p">Имя клиента</span>,<span> для вашего номера и конечно же для Вас от компании Билайн есть предложение перейти со своим номером в компанию.
           </span>
+          
         </p>  <!-- Ссылки вкладки -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'London')">Согласен выслушать</button>
@@ -84,7 +85,7 @@
 <div id="Paris" class="tabcontent"> 
   
     <h4>
-      Имя клиента, от компании Билайн для Вас предусмотрена персональная  скидка на 2 месяца <span>50%</span> на связь, стоимость получится чуть меньше(больше) стоимости выбранного Вами тарифа, предлагаю пробовать, протестировать связь Билайн, если не понравится то всегда есть шанс отказаться, пробовать думаю стоит! Можно Ваш телефон перевести в компанию, можно новую сим карту. Скажите как будет удобней?
+      <span class="p3">Имя клиента</span>, от компании Билайн для Вас предусмотрена персональная  скидка на 2 месяца <span>50%</span> на связь, стоимость получится чуть меньше(больше) стоимости выбранного Вами тарифа, предлагаю пробовать, протестировать связь Билайн, если не понравится то всегда есть шанс отказаться, пробовать думаю стоит! Можно Ваш телефон перевести в компанию, можно новую сим карту. Скажите как будет удобней?
     </h4>
      
      <p>
@@ -129,7 +130,8 @@
         Скажи что подключение бесплатное. <br>
         Еще раз все перепроверь.( <span>100р </span>  mnp, <span>50р </span> стоимость сим карты, в финансах будь точен. Про <span class="gp">гп</span>  не забывай)).<br>
         Попращайся с клиентом. <br>
-        <span>Имя клиента, придет смс с датой и временем на ваш телефон. Радости вам в дом, досвидание)</span>
+        <span class="p2">Имя клиента</span>,
+        <span> придет смс с датой и временем на ваш телефон. Радости вам в дом, досвидание)</span>
           </p>
       </div>
     </div>
@@ -137,6 +139,46 @@
   </div>
   <script src="app.js"></script>
   <script src="Up.js"></script>
+
+    <script>
+      let s;
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p').textContent = s
   
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p1').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p2').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+
+      
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p3').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+    
+
+    </script>
+    <script src="app.js"></script>
+    <script src="Up.js"></script>
+    
 </body>
 </html>
